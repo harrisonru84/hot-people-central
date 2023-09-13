@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hot People Central</title>
+  <style>
+    body { 
+      background-color: lightcoral;
+      font-family: Roboto, sans-serif; 
+    }
+    content {
+      height: 90vh; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+    }
+    button { 
+      border: none; 
+      background-color: blue; 
+      padding: 10px 40px;
+      font-size: 24px; 
+      color: white; 
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    header {
+      display: flex;
+      justify-content: center;
+    }
+    h3 {
+      color: white;
+      font-size: 14px;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h3>HOT PEOPLE CENTRAL</h3>
+  </header>
+  <content>
+    <button id="beHot">If you're hot, click here.</button>
+    <h1 id="text"></h1>
+  </content>
+
+    <script>
+      document.getElementById("beHot").addEventListener("click", uglyUgly); 
+      
+      function uglyUgly() { 
+        let answer = prompt ("Are you sure?");
+
+      if(answer==="Yes" || answer==="yes" || answer==="Yes." || answer==="yes.") {
+        alert("Okay. Fine.");
+      }
+      else if(answer==="" || answer===null) {
+        alert("You didn't type anything, stupid.")
+      }
+      else {
+        alert("Sorry, I can't help you, ugly.");
+      }
+  };
+    </script>
+</body>
+
+</html>
